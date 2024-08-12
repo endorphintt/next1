@@ -1,0 +1,89 @@
+.top {
+    padding-top: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 900px;
+    margin-top: 30px;
+    background: url('./homeAboutBack.png') no-repeat 0 0 / 900px;
+    &__left {
+        padding: 10px;
+        max-width: 360px;
+        padding-bottom: 0;
+    }
+    &__agent {
+        color: #0047ab;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    &__contact {
+        padding: 20px;
+        width: 172px;
+        height: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid #0047ab;
+        color: #0047ab;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 600;
+        margin: 20px 0 5px 0;
+        position: relative;
+        transition: 0.5s;
+        &::after,
+        &::before {
+            transition: 0.5s;
+            position: absolute;
+            content: '';
+            background-color: #0047ab;
+            width: 30px;
+            height: 2px;
+            top: calc(50% - 1px);
+        }
+        &::after {
+            left: -50px;
+        }
+        &::before {
+            right: -50px;
+        }
+        &:hover {
+            background-color: #0047ab;
+            color: white;
+            &::after {
+                left: -55px;
+            }
+            &::before {
+                right: -55px;
+            }
+        }
+    }
+    &__text {
+        border-left: 3px #0047ab solid;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        & p {
+            color: #626262;
+        }
+    }
+    &__image {
+        width: 400px;
+    }
+}
+
+@media (max-width: 760px) {
+    .top {
+        flex-direction: column-reverse;
+        &__image {
+            width: 320px;
+            margin-bottom: 30px;
+        }
+        background: none;
+        padding-top: 30px;
+    }
+}

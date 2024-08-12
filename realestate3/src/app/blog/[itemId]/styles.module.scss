@@ -1,0 +1,35 @@
+.blog {
+    &__item {
+        margin-bottom: 50px;
+    }
+    &__title {
+        color: #0047ab;
+        font-weight: 500;
+        padding: 15px;
+        font-size: 20px;
+    }
+    &__text {
+        border-left: 2px solid #0047ab;
+        margin: 10px;
+        padding-left: 20px;
+        font-size: 16px;
+        color: #6c6d6e;
+        margin-bottom: 100px;
+    }
+    &__img {
+        width: 100%;
+    }
+}
+
+@media (min-width: 900px) {
+    .blog {
+        &__item {
+            width: 900px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+        &__img {
+            width: 900px;
+        }
+    }
+}

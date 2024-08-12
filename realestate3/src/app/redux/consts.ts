@@ -1,0 +1,3 @@
+export const TOGGLE_MENU = 'TOGGLE_MENU'
+export const TOGGLE_CONTACT = 'TOGGLE_CONTACT'
+export const TOGGLE_LANGUAGE = 'TOGGLE_LANGUAGE'

@@ -1,0 +1,41 @@
+.container {
+    position: fixed;
+    left: 3%;
+    top: 3%;
+    width: 94%;
+    height: 96%;
+    max-height: 700px;
+    z-index: 5000;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    background-color: white;
+    &__header {
+        height: 70px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__close {
+        margin: 10px;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        &::after,
+        &::before {
+            position: absolute;
+            content: '';
+            width: 30px;
+            height: 2px;
+            background-color: #0047ab;
+            top: 15px;
+            left: 0px;
+        }
+        &::after {
+            transform: rotate(45deg);
+        }
+        &::before {
+            transform: rotate(-45deg);
+        }
+    }
+}

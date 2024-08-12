@@ -1,0 +1,38 @@
+.mission {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-around;
+    &__item {
+        margin: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 350px;
+        width: 300px;
+        justify-content: space-between;
+        & img {
+            margin-bottom: 20px;
+        }
+    }
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #205eb5;
+        margin-top: 20px;
+    }
+    &__text {
+        color: #716f6f;
+        padding: 20px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 550px) {
+    .mission {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,21 @@
+.blog {
+    &__items {
+        max-width: 915px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    &__item {
+        width: 280px;
+        margin: 20px 2.5px;
+    }
+    &__img {
+        border-radius: 10px;
+    }
+    &__title {
+        color: black;
+        font-weight: 600;
+        margin: 10px;
+    }
+}

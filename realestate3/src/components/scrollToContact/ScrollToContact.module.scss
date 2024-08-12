@@ -1,0 +1,59 @@
+.scroll {
+    cursor: pointer;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 200px;
+    width: 100vw;
+    background-color: rgba(179, 179, 179, 0.21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    &__text {
+        color: #0047ab;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+    }
+    &:hover {
+        background-color: #abc3e4;
+        &__text {
+            color: #ffffff;
+        }
+    }
+    & span {
+        margin-left: 20px;
+        display: block;
+        background-color: #0047ab;
+        width: 2px;
+        height: 30px;
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            background-color: #0047ab;
+            width: 15px;
+            height: 2px;
+            bottom: 6px;
+        }
+        &::before {
+            left: -12px;
+            transform: rotate(45deg);
+        }
+        &::after {
+            left: -1px;
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+@media (max-width: 676px) {
+    .scroll {
+        height: 150px;
+        &__text {
+            font-size: 16px;
+        }
+    }
+}
